@@ -1,6 +1,6 @@
 #!/usr/bin/bash 
 
-sed -i 's/\[]/\["13.201.224.90"]/' /home/ubuntu/Host/Game/settings.py
+sed -i 's/\[]/\["13.201.224.90"]/' /home/ubuntu/cicd/Game/settings.py
 
 python manage.py migrate 
 python manage.py makemigrations     

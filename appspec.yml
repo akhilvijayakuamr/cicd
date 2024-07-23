@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files: 
   - source: /
-    destination: /home/ubuntu/Host
+    destination: /home/ubuntu/cicd
 permissions:
-  - object: /home/ubuntu/Host
+  - object: /home/ubuntu/cicd
     owner: ubuntu
     group: ubuntu
 hooks:
