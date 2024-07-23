@@ -93,32 +93,32 @@ WSGI_APPLICATION = 'Game.wsgi.application'
 
 import os
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': os.getenv('DATABASE_NAME', 'mybase'),
-#         'USER': os.getenv('DATABASE_USER', 'akhil'),
-#         'PASSWORD': os.getenv('DATABASE_PASSWORD', 'akhil'),
-#         'HOST': os.getenv('DATABASE_HOST', 'localhost'),
-#         'PORT': os.getenv('DATABASE_PORT', '5432'),
-#     },
-#     'streamdata': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': os.getenv('DATABASE_STREAMDATA_NAME', 'streamdata'),
-#         'USER': os.getenv('DATABASE_STREAMDATA_USER', 'akhil'),
-#         'PASSWORD': os.getenv('DATABASE_STREAMDATA_PASSWORD', 'akhil'),
-#         'HOST': os.getenv('DATABASE_STREAMDATA_HOST', 'localhost'),
-#         'PORT': os.getenv('DATABASE_STREAMDATA_PORT', '5432'),
-#     },
-# }
-
-
 DATABASES = {
-   'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-   }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DATABASE_NAME', 'mybase'),
+        'USER': os.getenv('DATABASE_USER', 'akhil'),
+        'PASSWORD': os.getenv('DATABASE_PASSWORD', 'akhil'),
+        'HOST': os.getenv('DATABASE_HOST', 'localhost'),
+        'PORT': os.getenv('DATABASE_PORT', '5432'),
+    },
+    'streamdata': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DATABASE_STREAMDATA_NAME', 'streamdata'),
+        'USER': os.getenv('DATABASE_STREAMDATA_USER', 'akhil'),
+        'PASSWORD': os.getenv('DATABASE_STREAMDATA_PASSWORD', 'akhil'),
+        'HOST': os.getenv('DATABASE_STREAMDATA_HOST', 'localhost'),
+        'PORT': os.getenv('DATABASE_STREAMDATA_PORT', '5432'),
+    },
 }
+
+
+# DATABASES = {
+#    'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+# }
 
     
     
