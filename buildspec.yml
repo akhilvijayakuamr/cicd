@@ -1,18 +1,18 @@
 version: 0.1
 
-environment_variables:
-  plaintext:
-    DJANGO_SETTINGS_MODULE: config.settings.test
-    SECRET_KEY: nosecret
-    DATABASE_NAME: mybase
-    DATABASE_USER: akhil
-    DATABASE_PASSWORD: akhil
-    DATABASE_HOST: localhost
-    DATABASE_PORT: 5432
-    STREAM_INCOMING_PRIVATE_KEY: changeme
-    STREAM_INCOMING_PUBLIC_KEY: changeme
-    GOOGLE_API_KEY: changeme
-    OPBEAT_ENABLED: False
+# environment_variables:
+#   plaintext:
+#     DJANGO_SETTINGS_MODULE: config.settings.test
+#     SECRET_KEY: nosecret
+#     DATABASE_NAME: mybase
+#     DATABASE_USER: akhil
+#     DATABASE_PASSWORD: akhil
+#     DATABASE_HOST: localhost
+#     DATABASE_PORT: 5432
+#     STREAM_INCOMING_PRIVATE_KEY: changeme
+#     STREAM_INCOMING_PUBLIC_KEY: changeme
+#     GOOGLE_API_KEY: changeme
+#     OPBEAT_ENABLED: False
 
 
 phases:

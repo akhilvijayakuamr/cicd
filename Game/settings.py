@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-oa)0a^+-$3&qy60i315=(ofp-7k_op7g%h54a8!68tq+m!x(g*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -93,23 +93,31 @@ WSGI_APPLICATION = 'Game.wsgi.application'
 
 import os
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.getenv('DATABASE_NAME', 'mybase'),
+#         'USER': os.getenv('DATABASE_USER', 'akhil'),
+#         'PASSWORD': os.getenv('DATABASE_PASSWORD', 'akhil'),
+#         'HOST': os.getenv('DATABASE_HOST', 'localhost'),
+#         'PORT': os.getenv('DATABASE_PORT', '5432'),
+#     },
+#     'streamdata': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.getenv('DATABASE_STREAMDATA_NAME', 'streamdata'),
+#         'USER': os.getenv('DATABASE_STREAMDATA_USER', 'akhil'),
+#         'PASSWORD': os.getenv('DATABASE_STREAMDATA_PASSWORD', 'akhil'),
+#         'HOST': os.getenv('DATABASE_STREAMDATA_HOST', 'localhost'),
+#         'PORT': os.getenv('DATABASE_STREAMDATA_PORT', '5432'),
+#     },
+# }
+
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DATABASE_NAME', 'mybase'),
-        'USER': os.getenv('DATABASE_USER', 'akhil'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD', 'akhil'),
-        'HOST': os.getenv('DATABASE_HOST', 'localhost'),
-        'PORT': os.getenv('DATABASE_PORT', '5432'),
-    },
-    'streamdata': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DATABASE_STREAMDATA_NAME', 'streamdata'),
-        'USER': os.getenv('DATABASE_STREAMDATA_USER', 'akhil'),
-        'PASSWORD': os.getenv('DATABASE_STREAMDATA_PASSWORD', 'akhil'),
-        'HOST': os.getenv('DATABASE_STREAMDATA_HOST', 'localhost'),
-        'PORT': os.getenv('DATABASE_STREAMDATA_PORT', '5432'),
-    },
+   'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+   }
 }
 
     
