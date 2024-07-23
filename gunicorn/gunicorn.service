@@ -6,7 +6,7 @@ After=network.target
 User=ubuntu
 Group=www-data
 WorkingDirectory=/home/ubuntu/cicd
-ExecStart=/home/ubuntu/env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ubuntu/cicd/auth/auth.sock auth.wsgi:application
+ExecStart=/home/ubuntu/env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ubuntu/cicd/Game/Game.sock Game.wsgi:application
 
        
 [Install]
