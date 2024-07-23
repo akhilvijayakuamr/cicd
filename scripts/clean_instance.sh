@@ -1,1 +1,3 @@
-sudo rm -rf /home/ubuntu/cicd/*
+#!/usr/bin/env bash
+
+sudo rm -rf /home/ubuntu/Host/*
